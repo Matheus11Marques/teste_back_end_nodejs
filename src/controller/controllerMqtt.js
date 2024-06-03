@@ -13,11 +13,10 @@ client.on('connect', () => {
 
 client.on('message', (topic, payload) => {
   if (topic === topicsPrometeus[0]) {
-    infoPrometeus.prometeus03 = payload.toString();
+    infoPrometeus.prometeus03 = parseInt(payload.toString());
   }
   if (topic == topicsPrometeus[1]) {
-    infoPrometeus.prometeus01 = payload.toString();
+    infoPrometeus.prometeus01 = parseInt(payload.toString());
   }
-
   console.log(infoPrometeus);
 });

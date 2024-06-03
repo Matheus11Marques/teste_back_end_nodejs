@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "mqtt": "node --watch src/controller/controllerMqtt.js"
+    "mqtt": "node --watch src/controller/controllerMqtt.js",
+    "server": "node --watch server.js"
   },
   "keywords": [],
   "author": "",
